@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c334cf0761.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Music.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="gopinath.jpg" class="song-img">
+            <h1> Divine Mahamantra</h1>
+            <p> --Vishwambar Das-ISKCON Chopatty--</p>
+            <audio  id="song">
+                <source src="mahamantra.mp3" >
+                
+            </audio>
+            <input type="range" value="0" id="progress">
+            
+            <div class="controls">
+                <div> <i class="fa-solid fa-backward" ></i> </div>
+                <div onclick="playPause()" > <i class="fa-solid fa-play" id="ctrlIcon" ></i> </div>
+                <div> <i class="fa-solid fa-forward" ></i> </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Music.js"></script>
+</body>
+</html>
